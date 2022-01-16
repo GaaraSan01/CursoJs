@@ -1,0 +1,35 @@
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+  }
+  .circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:10px solid #0d147a;
+    animation:circle 3s ease-in-out infinite;
+  }  
+  @keyframes circle{
+    0%{
+      border-color:#0332df;
+      transform:sacle(1);
+    }
+    25%{
+      border-color:#adb5bd;
+      transform:scale(0.7);
+    }
+    50%{
+      border-color:#0d147a;
+      transform:scale(1);
+    }
+    75%{
+      border: color black;
+      transform:scale(0.7);
+    }
+    100%{
+      border-color:#ff8700;
+      transform:scale(1);
+    }
+  }

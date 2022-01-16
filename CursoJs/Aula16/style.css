@@ -1,0 +1,24 @@
+body{
+    background: gold;
+    font: normal 15pt Montserrat;
+}
+header{
+    text-align: center;
+    color: rgb(17, 17, 99);
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.466);
+    width: 500px;
+    margin: auto;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: rgba(44, 5, 80, 0.445);
+}
+select#flista{
+    width: 150px;
+}

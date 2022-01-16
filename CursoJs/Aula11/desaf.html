@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Coloque em que pais nasceu: <input type="text" name="Pais" id="pais">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="vel"></div>
+    <script>
+        function pesquisar() {
+            var pa = document.getElementById('pais')
+            var res = document.getElementById('vel')
+            var paist = String(pa.value)
+            res.innerHTML = `Seu pais é ${paist}</br>`
+            if (paist == 'Brasil'){
+                res.innerHTML += 'Você é <strong>Nativo</strong>'
+            }else{
+                res.innerHTML += 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
